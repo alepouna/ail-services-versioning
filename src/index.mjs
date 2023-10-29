@@ -8,7 +8,7 @@ const fastify = Fastify({
 
 await loadRoutes(fastify, { dir: './src/routes', log: false, method: 'GET', prefix: '/' });
 
-fastify.listen({port: 8080}, (err, address) => {
+fastify.listen({port: 8080, host: '0.0.0.0'}, (err, address) => {
     if (err) {
         console.error(err);
         process.exit(1);
