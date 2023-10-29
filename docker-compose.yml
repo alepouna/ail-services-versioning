@@ -1,0 +1,9 @@
+# 
+version: '3.1'
+services:
+  ail-services-versioning:
+    image: auroraisluna/ail-services-versioning:latest
+    container_name: ail-services-versioning
+    restart: unless-stopped
+    ports:
+      - 14002:8080
