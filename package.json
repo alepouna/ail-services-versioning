@@ -1,0 +1,17 @@
+{
+  "name": "ail-services-versioning",
+  "version": "1.0.0",
+  "description": "A little app that shows versioning information for my public services and repos. This is to prevent GitHub API ratelimits.",
+  "main": "src/index.mjs",
+  "scripts": {
+    "start": "node src/index.mjs",
+    "docker": "docker build -t auroraisluna/ail-services-versioning"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.24.3",
+    "fastifyrouter.js": "^1.0.3"
+  }
+}
